@@ -10,6 +10,7 @@
 #pragma warning(push)
 #include "F4SE/F4SE.h"
 #include "RE/Fallout.h"
+#include "REX/REX/Singleton.h"
 
 #ifdef NDEBUG
 #	include <spdlog/sinks/basic_file_sink.h>
@@ -18,10 +19,7 @@
 #endif
 
 #include <CLibUtil/simpleINI.hpp>
-#include <CLibUtil/singleton.hpp>
 #include <CLibUtil/string.hpp>
-
-using namespace clib_util::singleton;
 
 #pragma warning(pop)
 
@@ -82,7 +80,6 @@ using namespace clib_util::singleton;
 namespace logger = F4SE::log;
 
 using namespace std::literals;
-using namespace clib_util::singleton;
 
 namespace stl
 {

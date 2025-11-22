@@ -73,7 +73,7 @@ extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Query(F4SE::PluginInfo* a_info)
 extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f4se)
 {
 	F4SE::Init(a_f4se, false);
-	F4SE::AllocTrampoline(1 << 12);
+	F4SE::AllocTrampoline(1 << 20);
 
 	const auto ver = a_f4se->RuntimeVersion();
 
@@ -81,7 +81,7 @@ extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f
 
 	logger::info("Game version : {}", ver.string());
 
-	if (ver < F4SE::RUNTIME_1_10_980) {
+	if (ver < F4SE::RUNTIME_1_11_137) {
 		logger::critical(FMT_STRING("Unsupported runtime version {}"), ver.string());
 		return false;
 	}

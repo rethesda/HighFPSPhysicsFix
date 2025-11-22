@@ -69,8 +69,8 @@ namespace HFPF
 		inline static REL::Relocation<std::uintptr_t> FixLockpickRotation{ AID::FixLockpickRotation, Offsets::FixLockpickRotation };
 		inline static REL::Relocation<std::uintptr_t> FixWSRotationSpeed{ AID::FixWSRotationSpeed, Offsets::FixWSRotationSpeed };
 		inline static REL::Relocation<std::uintptr_t> FixRepeateRate{ AID::FixRepeateRate, Offsets::FixRepeateRate };
-		inline static REL::Relocation<std::uintptr_t> FixLeftTriggerZoomSpeed{ AID::FixTriggerZoomSpeed, Offsets::FixLeftTriggerZoomSpeed };
-		inline static REL::Relocation<std::uintptr_t> FixRightTriggerZoomSpeed{ AID::FixTriggerZoomSpeed, Offsets::FixRightTriggerZoomSpeed };
+		inline static REL::Relocation<std::uintptr_t> FixLeftTriggerZoomSpeed{ AID::FixLeftTriggerZoomSpeed, Offsets::FixLeftTriggerZoomSpeed };
+		inline static REL::Relocation<std::uintptr_t> FixRightTriggerZoomSpeed{ AID::FixLeftTriggerZoomSpeed, Offsets::FixRightTriggerZoomSpeed };
 		inline static REL::Relocation<std::uintptr_t> FixLoadScreenRotationSpeedUp{ AID::FixRepeateRate, Offsets::FixLoadScreenRotationSpeedUp };
 		inline static REL::Relocation<std::uintptr_t> FixLoadScreenRotationSpeedDown{ AID::FixRepeateRate, Offsets::FixLoadScreenRotationSpeedDown };
 		inline static REL::Relocation<std::uintptr_t> FixLoadScreenRotationSpeedLeft{ AID::FixRepeateRate, Offsets::FixLoadScreenRotationSpeedLeft };

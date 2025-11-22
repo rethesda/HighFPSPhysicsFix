@@ -631,7 +631,7 @@ namespace HFPF
 					Xbyak::Label retnLabel;
 					Xbyak::Label magicLabel;
 
-					mov(ecx, ptr[rbx + 0x26C]);
+					mov(ecx, ptr[rdi + 0x26C]);
 					movss(xmm7, dword[rip + magicLabel]);
 
 					jmp(ptr[rip + retnLabel]);

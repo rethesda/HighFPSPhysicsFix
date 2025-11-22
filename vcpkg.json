@@ -1,6 +1,6 @@
 {
   "name": "high-fps-physics-fix",
-  "version-string": "0.8.11",
+  "version-string": "0.8.12",
   "description": "",
   "homepage": "",
   "license": "MIT",
@@ -15,7 +15,10 @@
     "nowide",
     "catch2",
     "args",
-    "spdlog",
+    {
+      "name": "spdlog",
+      "features": [ "wchar" ]
+    },
     "srell",
     "xbyak"
   ],
